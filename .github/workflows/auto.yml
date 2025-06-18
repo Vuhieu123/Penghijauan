@@ -6,8 +6,9 @@ on:
     branches:
       - master
 
+  workflow_dispatch:  # <-- Cho phép chạy tay
   schedule:
-      - cron: '40 13 * * *' 
+    - cron: '40 13 * * *'
 
 jobs:
   auto_commit:
